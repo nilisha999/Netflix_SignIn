@@ -1,0 +1,41 @@
+.footer {
+    background-color: #141414;
+    color: #b3b3b3;
+    text-align: center;
+    padding: 20px 10px;
+  }
+  
+  .footer-text {
+    margin-bottom: 10px;
+  }
+  
+  .footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px 0;
+  }
+  
+  .footer-link {
+    margin: 0 15px;
+    color: #b3b3b3;
+    text-decoration: underline;
+    font-size: 14px;
+  }
+  
+  .footer-credit {
+    margin-top: 10px;
+    font-size: 12px;
+  }
+  
+  @media (max-width: 500px) {
+    .footer-link {
+      margin: 10px 5px;
+      font-size: 12px;
+    }
+  
+    .footer-credit {
+      font-size: 10px;
+    }
+  }
+  
