@@ -1,0 +1,231 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(20px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.header {
+  font-size: 3em;
+  align-items: left;
+}
+
+.Netflix-header {
+  color: rgb(229, 9, 20);
+  background-image: url("C:\Users\L7tec\Desktop\Nilisha Techabled DOCS\vscode\vscode\udemey\typescript-react-project\clonenetflixsigninpageapp\src\netflix.png");
+  background-size: cover;
+  height: 75vh;
+  padding: 5% 2%; /* Add responsive padding */
+}
+
+/* src/SignIn.css */
+.body {
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  background: url("https://assets.nflxext.com/ffe/siteui/vlv3/2f0c0b60-b11b-4f88-b1b4-5e5b98f1f911/2c637b44-36bc-4e96-bec7-32991b11394a/US-en-20231009-popsignuptwoweeks-perspective_alpha_website_small.jpg")
+    no-repeat center center fixed;
+  background-size: cover;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /*Ensure full heigth*/
+}
+
+.footer {
+  padding: 1 rem;
+  text-align: center;
+}
+
+.main {
+  flex: 1; /*Allow main to grow*/
+  padding: 1rem;
+  display: flex;
+  justify-content: center; /*Center content*/
+}
+
+@media (max-width: 768px) {
+  .header,
+  .footer {
+    padding: 0.5rem; /*Less padding on smaller screens*/
+  }
+
+  .main {
+    flex-direction: column; /*Stack items vertically*/
+  }
+}
+
+.signin-container {
+  width: 90%; /* Make it responsive */
+  max-width: 400px; /* Limit maximum width */
+  padding: 2rem;
+  background: rgba(0, 0, 0, 0.85);
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  margin: 10% auto; /* Adjust margin for better spacing */
+  color: white;
+  text-align: center;
+}
+
+.logo {
+  width: 100%;
+  max-width: 150px;
+  margin-bottom: 20px;
+}
+
+.signin-form input {
+  width: 100%;
+  padding: 15px;
+  margin: 10px 0;
+  border: 1px solid #555;
+  border-radius: 5px;
+  background: black;
+  color: white;
+}
+
+.signin-form button {
+  width: 100%;
+  padding: 15px;
+  background: #e50914;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.signin-form button:hover {
+  background: #f40612;
+}
+
+.help-link {
+  color: #b3b3b3;
+  text-decoration: none;
+}
+
+.signup-link {
+  margin-top: 20px;
+  color: #b3b3b3;
+}
+
+.signup-link a {
+  color: white;
+  text-decoration: none;
+}
+
+.signin-code-button {
+  width: 100%;
+  padding: 15px;
+  margin-top: 10px;
+  background: rgba(94, 93, 93, 0.623);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.signin-code-button:hover {
+  background: #f40612;
+}
+
+.remember-me {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.remember-me input[type="checkbox"] {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.remember-me label {
+  color: white;
+  font-size: 14px;
+}
+
+.captcha {
+  color: #555;
+  font-size: 14px;
+  text-align: left;
+}
+
+.left-align {
+  text-align: left;
+  color: #555;
+}
+
+.left-align-signin-header {
+  text-align: left;
+  color: white;
+}
+
+.learn-more-link {
+  color: rgb(47, 85, 167);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .Netflix-header {
+    padding: 5% 5%; /* Responsive padding */
+  }
+
+  .signin-container {
+    width: 95%; /* Full width on medium screens */
+    margin: 5% auto; /* Adjust margin for smaller screens */
+    padding: 1 rem; /* Less padding */
+  }
+}
+
+@media (max-width: 480px) {
+  .signin-container {
+    padding: 1rem; /* Further reduce padding */
+  }
+
+  .signin-form input,
+  .signin-form button,
+  .signin-code-button {
+    width: 90%; /* Full width inputs and buttons */
+  }
+
+  .header {
+    font-size: 1em; /* Adjust header size for small screens */
+  }
+}
